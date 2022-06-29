@@ -14,17 +14,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto me-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link
               to="/"
               class="nav-link"
               :class="{ active: $route.name === 'home' }"
               >Home</router-link
             >
-          </li>
+          </li> -->
           <li class="nav-item">
             <router-link
-              to="/tasks"
+              to="/"
               class="nav-link"
               :class="{ active: $route.name === 'tasks' }"
               >Tasks</router-link
