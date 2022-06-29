@@ -19,13 +19,6 @@
       <h4>{{ loading ? "Loading..." : "" }}</h4>
     </div>
     <div class="row">
-      <div :class="showForm ? 'col-lg-8' : 'col-lg-12'">
-        <Tasks
-          :tasks="tasks"
-          @handleEdit="editTask"
-          @handleDelete="deleteTask"
-        />
-      </div>
       <div :class="showForm ? 'col-lg-4' : ''">
         <Form
           v-show="showForm"
@@ -34,6 +27,13 @@
           :form="form"
           :showBtnCreate="showBtnCreate"
           :showBtnUpdate="showBtnUpdate"
+        />
+      </div>
+      <div :class="showForm ? 'col-lg-8' : 'col-lg-12'">
+        <Tasks
+          :tasks="tasks"
+          @handleEdit="editTask"
+          @handleDelete="deleteTask"
         />
       </div>
     </div>
